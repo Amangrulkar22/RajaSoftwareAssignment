@@ -9,11 +9,30 @@
 import UIKit
 
 class SumOfEvenViewController: UIViewController {
+    
+    @IBOutlet weak var lblOutput: UILabel!
+    
+    let numberArray = [10, 9, 7, 6, 3, 5, 3, 4, 8]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        lblOutput.text = "Output - \(calculateEvenNumberSum())"
+    }
+    
+    /// Calculate additiion of even number
+    ///
+    /// - Returns: calculated result
+    func calculateEvenNumberSum() -> Int {
+        var calculatedValue = 0
+        for value in numberArray {
+            if value % 2 == 0 {
+                calculatedValue+=value
+            }
+        }
+        return calculatedValue
     }
 
     override func didReceiveMemoryWarning() {

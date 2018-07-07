@@ -10,12 +10,43 @@ import UIKit
 
 class DisplayBinaryNumberVC: UIViewController {
 
+    /// Textfield input object
+    @IBOutlet weak var txtInput: UITextField!
+    
+    /// Label output object
+    @IBOutlet weak var lblOutput: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
+    /// Check action method
+    ///
+    /// - Parameter sender: button object
+    @IBAction func checkAction(_ sender: Any) {
+        
+        if txtInput.text == "" {
+            CustomAlertView.showWarningAlert("Enter value")
+        }else {
+            self.view.endEditing(true)
+            
+            let value = convertDesimalToBinary(inputValue: txtInput.text!)
+            lblOutput.text = "Binary value of \(txtInput.text!) is - \(value)"
+        }
+    }
+    
+    /// Method to convert desimal number to binary number
+    ///
+    /// - Parameter inputValue: desimal number string
+    /// - Returns: output string
+    func convertDesimalToBinary(inputValue: String) -> String {
+        let tempValue = Int(inputValue)!
+        let binaryValue = String(tempValue, radix: 2)
+        return binaryValue
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

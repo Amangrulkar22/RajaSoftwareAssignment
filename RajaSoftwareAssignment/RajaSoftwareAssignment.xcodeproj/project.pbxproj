@@ -17,6 +17,8 @@
 		FCA4DE3C20F1196000BC1279 /* DisplayNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DE3B20F1196000BC1279 /* DisplayNumberVC.swift */; };
 		FCA4DE3E20F1198500BC1279 /* PalindromeCheckVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DE3D20F1198500BC1279 /* PalindromeCheckVC.swift */; };
 		FCA4DE4020F119AE00BC1279 /* DisplayBinaryNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DE3F20F119AE00BC1279 /* DisplayBinaryNumberVC.swift */; };
+		FCA4DE4520F1427700BC1279 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DE4420F1427600BC1279 /* CustomAlertView.swift */; };
+		FCA4DE4720F1476D00BC1279 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA4DE4620F1476D00BC1279 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		FCA4DE3B20F1196000BC1279 /* DisplayNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayNumberVC.swift; sourceTree = "<group>"; };
 		FCA4DE3D20F1198500BC1279 /* PalindromeCheckVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeCheckVC.swift; sourceTree = "<group>"; };
 		FCA4DE3F20F119AE00BC1279 /* DisplayBinaryNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBinaryNumberVC.swift; sourceTree = "<group>"; };
+		FCA4DE4420F1427600BC1279 /* CustomAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		FCA4DE4620F1476D00BC1279 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		FCA4DE3520F1182100BC1279 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FCA4DE4620F1476D00BC1279 /* Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,8 +104,17 @@
 				FCA4DE3B20F1196000BC1279 /* DisplayNumberVC.swift */,
 				FCA4DE3D20F1198500BC1279 /* PalindromeCheckVC.swift */,
 				FCA4DE3F20F119AE00BC1279 /* DisplayBinaryNumberVC.swift */,
+				FCA4DE4320F1427600BC1279 /* CustomAlertView */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FCA4DE4320F1427600BC1279 /* CustomAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				FCA4DE4420F1427600BC1279 /* CustomAlertView.swift */,
+			);
+			path = CustomAlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +194,9 @@
 				FCA4DE3C20F1196000BC1279 /* DisplayNumberVC.swift in Sources */,
 				FCA4DE3820F118D200BC1279 /* SumOfEvenNumberVC.swift in Sources */,
 				FCA4DE3A20F1191800BC1279 /* MultiplicationOfNumberVC.swift in Sources */,
+				FCA4DE4520F1427700BC1279 /* CustomAlertView.swift in Sources */,
 				FCA4DE2320F1131500BC1279 /* AppDelegate.swift in Sources */,
+				FCA4DE4720F1476D00BC1279 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
